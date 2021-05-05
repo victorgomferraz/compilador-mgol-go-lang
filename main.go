@@ -3,10 +3,19 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"os"
 )
 
 func main() {
-	conteudo, _ := ioutil.ReadFile("test/mgol_files/simple.alg")
+	var caminho = "test/mgol_files/simple.alg"
+	args := os.Args
+
+	if len(args) > 1 && args[1] != "" {
+		caminho = args[1]
+	}
+
+	fmt.Printf("Lendo arquivo: %s\n", caminho)
+	conteudo, _ := ioutil.ReadFile(caminho)
 	tokens, erros := ExtrairTokens(string(conteudo))
 
 	for _, token := range tokens {
