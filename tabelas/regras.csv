@@ -1,0 +1,39 @@
+Indice,P1,P2,TamanhoB
+1,P',P,1
+2,P,inicio V A,3
+3,V,varinicio LV,2
+4,LV,D LV,2
+5,LV,varfim;,2
+6,D,L TIPO;,3
+7,L,"id, L",3
+8,L,"id",1
+9,TIPO,int,1
+10,TIPO,real,1
+11,TIPO,lit,1
+12,A,ES A,2
+13,ES,leia id;,3
+14,ES,escreva ARG;,3
+15,ARG,literal,1
+16,ARG,num,1
+17,ARG,id,1
+18,A,CMD A,2
+19,CMD,id rcb LD;,4
+20,LD,OPRD opm OPRD,3
+21,LD,OPRD,1
+22,OPRD,id,1
+23,OPRD,num,1
+24,A,COND A,2
+25,COND,CAB CP,2
+26,CAB,se (EXP_R) então,5
+27,EXP_R,OPRD opr OPRD,3
+28,CP,ES CP,2
+29,CP,CMD CP,2
+30,CP,COND CP,2
+31,CP,fimse,1
+32,A,R A,2
+33,R,facaAte (EXP_R) CP_R,5
+34,CP_R,ES CP_R,2
+35,CP_R,CMD CP_R,2
+36,CP_R,COND CP_R,2
+37,CP_R,fimFaca,1
+38,A,fim,1
